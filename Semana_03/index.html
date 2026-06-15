@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Ventas XYZ</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a; /* Fondo oscuro moderno */
+            color: #f8fafc; /* Texto claro para alto contraste */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        /* Contenedor de la cabecera principal */
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #334155;
+        }
+        h1 { color: #38bdf8; margin: 0 0 10px 0; font-size: 2.5rem; }
+        
+        /* Menú de navegación horizontal */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Diseño de rejilla (Grid) para separar el contenido principal del Aside */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr; /* 3 partes para Main, 1 parte para Aside */
+            gap: 20px;
+        }
+        
+        /* Área de contenido principal */
+        main {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        /* Separación interna de cada sección */
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        h2 { color: #cbd5e1; font-size: 1.8rem; margin-top: 0; }
+        ul { color: #cbd5e1; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        
+        /* Ajuste responsivo para la imagen */
+        .img-placeholder {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 15px;
+            display: block;
+        }
+        
+        /* Contenedor responsivo para el video de YouTube (mantiene relación 16:9) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-top: 15px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+        
+        /* Barra lateral para información secundaria */
+        aside {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        aside h3 { color: #38bdf8; margin-top: 0; }
+        
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Gestión de Ventas XYZ</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios o Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <main>
+            
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <article>
+                    <p>Bienvenido al <strong>Sistema de Gestión de Ventas XYZ</strong>, una plataforma integral diseñada específicamente para optimizar y automatizar las operaciones comerciales de micro, medianas y grandes empresas. Nuestro software proporciona herramientas avanzadas para la administración eficiente de inventarios en tiempo real, el control centralizado de clientes y la emisión ágil de facturación electrónica conforme a las normativas vigentes.</p>
+                </article>
+            </section>
+
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <article>
+                    <p>Somos un equipo tecnológico comprometido con la transformación digital del sector comercial. El <strong>Sistema de Gestión de Ventas XYZ</strong> nació de la necesidad latente de los negocios locales por contar con una herramienta robusta, intuitiva y accesible que les permita dar el salto hacia la automatización sin complejas curvas de aprendizaje.</p>
+                    <p>Nuestra misión es empoderar a los administradores y propietarios mediante el análisis de datos precisos, reportes automáticos y flujos de trabajo simplificados. Creemos firmemente que la eficiencia operativa es el pilar fundamental para el crecimiento sostenible de cualquier emprendimiento en la actualidad. Con años de experiencia en el desarrollo de aplicaciones web, garantizamos un entorno seguro, escalable y en constante evolución tecnológica para cumplir con las más altas exigencias del mercado.</p>
+                    
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Dashboard del Sistema de Gestión de Ventas">
+                </article>
+            </section>
+
+            <section id="servicios">
+                <h2>Servicios o Productos</h2>
+                <p>Nuestra plataforma cuenta con módulos especializados listos para su implementación:</p>
+                <ul>
+                    <li><strong>Control de Inventario Inteligente:</strong> Monitoreo de stock en tiempo real, alertas de desabastecimiento y gestión de proveedores.</li>
+                    <li><strong>Facturación Electrónica Automatizada:</strong> Emisión rápida de comprobantes autorizados y sincronización inmediata.</li>
+                    <li><strong>CRM de Clientes:</strong> Historial de compras, gestión de perfiles de clientes frecuentes y análisis de tendencias de consumo.</li>
+                    <li><strong>Reportes y Estadísticas:</strong> Paneles visuales interactivos con el resumen de ingresos diarios, semanales y mensuales.</li>
+                </ul>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>¿Listo para transformar tu negocio? Ponte en contacto con nuestro equipo de soporte técnico y ventas:</p>
+                <ul>
+                    <li><strong>Correo Electrónico:</strong> <a href="mailto:soporte@sistemaxyz.com" style="color: #38bdf8;">soporte@sistemaxyz.com</a></li>
+                    <li><strong>Teléfono:</strong> +593 99 999 9999</li>
+                    <li><strong>Dirección:</strong> Av. Principal y Calle Secundaria, Guaranda, Ecuador</li>
+                </ul>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <p>
+                    <a href="https://facebook.com" target="_blank" style="color: #38bdf8; margin-right: 15px;">Facebook</a>
+                    <a href="https://linkedin.com" target="_blank" style="color: #38bdf8; margin-right: 15px;">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" style="color: #38bdf8;">GitHub</a>
+                </p>
+                
+                <h3>Video Demostrativo del Sistema</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QUHMfQnJBRU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Promociones & Info</h3>
+            <p><strong>¡Oferta de Lanzamiento!</strong><br>Obtén un 20% de descuento en la suscripción anual del módulo de facturación.</p>
+            <hr style="border: 0; border-top: 1px solid #334155; margin: 15px 0;">
+            <p><strong>Horarios de Atención:</strong><br>Lunes a Viernes:<br>08:00 AM - 06:00 PM</p>
+            <hr style="border: 0; border-top: 1px solid #334155; margin: 15px 0;">
+            <p><strong>Próxima Actualización:</strong><br>Versión 2.1 con pasarelas de pago integradas disponible pronto.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Desarrollado por: <strong>Cristhian Chacha</strong></p>
+        <p>Asignatura: Desarrollo de Aplicaciones Web</p>
+        <p>© 2026 - Universidad Estatal Amazónica</p>
+    </footer>
+
+</body>
+</html>
